@@ -69,9 +69,8 @@
                 <div class="title m-b-md">
                     Laravel Meetup
                 </div>
-                <a href="{{ $random_url }}"> Test Script</a>
                 <div class="img-fluid">
-                    <img src="https://chart.googleapis.com/chart?cht=qr&chl={{$random_url}}&chs=320x320&chld=L">
+                    <img src="https://chart.googleapis.com/chart?cht=qr&chs=320x320&chld=L&chl={{$random_url}}">
                 </div>
             </div>
         </div>
