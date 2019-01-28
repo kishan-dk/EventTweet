@@ -74,6 +74,10 @@
                 </div>
             </div>
         </div>
+        <footer style="margin-top: -6.8%">
+            <p>Created by: Kishan Dudhatra</p>
+            <p>Contact information: dk.kishandudhatra@gmail.com (7016963621 / 9714878398)</p>
+        </footer>
     </body>
 </html>
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
