@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <meta http-equiv="refresh" content="5" />
         <title>Laravel</title>
 
         <!-- Fonts -->
@@ -64,7 +64,7 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div class="flex-center position-ref full-height" id="flex">
             <div class="content">
                 <div class="title m-b-md">
                     Laravel Meetup
@@ -76,8 +76,5 @@
         </div>
     </body>
 </html>
-<script>
-    
-</script>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 
-    
