@@ -66,18 +66,11 @@
     <body>
         <div class="flex-center position-ref full-height" id="flex">
             <div class="content">
-                <div class="title m-b-md">
-                    Laravel Meetup
-                </div>
                 <div class="img-fluid">
                     <img src="https://chart.googleapis.com/chart?cht=qr&chs=320x320&chld=L&chl={{$random_url}}">
                 </div>
             </div>
         </div>
-        <footer style="margin-top: -6.8%">
-            <p>Created by: Kishan Dudhatra</p>
-            <p>Contact information: dk.kishandudhatra@gmail.com (7016963621 / 9714878398)</p>
-        </footer>
     </body>
 </html>
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
