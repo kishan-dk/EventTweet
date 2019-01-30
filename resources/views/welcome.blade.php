@@ -3,7 +3,6 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="refresh" content="5" />
         <title>Laravel</title>
 
         <!-- Fonts -->
@@ -67,7 +66,7 @@
         <div class="flex-center position-ref full-height" id="flex">
             <div class="content">
                 <div class="img-fluid">
-                    <img src="https://chart.googleapis.com/chart?cht=qr&chs=320x320&chld=L&chl={{$random_url}}">
+                    <img src="https://chart.googleapis.com/chart?cht=qr&chs=320x320&chld=L&chl={{Config::get('constants.tweeturl')}}">
                 </div>
             </div>
         </div>
