@@ -28,7 +28,7 @@ class QrController extends Controller {
     public function words() {
         $random = '';
         //$var[] = [];
-        $when = ['Just', 'Today', 'Once%2520more%2520time','As%2520usual','Friends%2520and%2520I','for%2520the%2520first%2520time','Quickly'];
+        $when = ['Just', 'Today', 'One%2520more%2520time','As%2520usual','Friends%2520and%2520I','for%2520the%2520first%2520time','Quickly'];
         $doing = ['Came%2520to', 'reached%2520to', 'jumped%2520to','got%2520a%2520chance%2520to','arrived%2520to','signing%2520in%2520to','entered%2520to'];    
         $what = ['Visit', 'attend', 'see','discover','explore','experience'];
         $power = ['Awesome','magical','epic','excellent','exciting','secretive','improved','informative','innovative','jaw-dropping','latest','mind-blowing','outstanding','popular','powerful','promising','simplistic','simplified','special','spectacular','surprising','thrilled'];
@@ -61,6 +61,8 @@ class QrController extends Controller {
         
         return $random;
     }
+    
+    
 
     public function words_url() {
         $text = $this->words();
@@ -72,6 +74,10 @@ class QrController extends Controller {
                 . "&original_referer="
                 . "";
         return $url;
+    }
+    
+    public function tweet() {
+        echo $this->words_url();
     }
 
 }
