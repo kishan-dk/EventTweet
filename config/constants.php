@@ -6,7 +6,9 @@ return [
     'tweet_qr_redirect'  =>  'tweet',
     'twitter'  =>  [
         'endpoint'  =>  'https://twitter.com/intent/tweet',
-        'text'  =>  'text'
+        'text'  =>  'text',
+        'hashtag'   =>  'hashtags',
+        'related'   =>  'related'
     ],
     'words' =>  [
         'when'  => ['Just','Today','One more time','As usual','Friends and I','for the first time','Quickly'],
@@ -38,5 +40,7 @@ return [
         'whatisit','space','event','space','at','space','community','dot','space',
         'extreme','space','power','space','day','space','outcome','space',
         'with','space','speakers'
-    ]
+    ],
+    'hashtags'  =>  'community,opensource',
+    'related_accounts'  =>  'laravelAhm,laravellive'
 ];
