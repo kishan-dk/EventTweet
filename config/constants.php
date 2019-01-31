@@ -2,7 +2,7 @@
 
 return [
     'qr_url'  =>  'https://chart.googleapis.com/chart?cht=qr',
-    'qr_size'   =>  '320x320',
+    'qr_size'   =>  '540x540',
     'tweet_qr_redirect'  =>  'tweet',
     'twitter'  =>  [
         'endpoint'  =>  'https://twitter.com/intent/tweet',
