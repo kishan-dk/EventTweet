@@ -66,7 +66,7 @@
         <div class="flex-center position-ref full-height" id="flex">
             <div class="content">
                 <div class="img-fluid">
-                    <img src="https://chart.googleapis.com/chart?cht=qr&chs=320x320&chld=L&chl={{Config::get('constants.tweeturl')}}">
+                    <img src="https://chart.googleapis.com/chart?cht=qr&chs={{Config::get('constants.qr_size')}}&chld=L&chl={{env('APP_URL')}}{{Config::get('constants.tweet_qr_redirect')}}">
                 </div>
             </div>
         </div>
