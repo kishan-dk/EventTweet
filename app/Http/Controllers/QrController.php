@@ -44,12 +44,14 @@ class QrController extends Controller {
     
     public function words_url() {
         $text = $this->generate_sentence();
-        $url = $this->generate_tweet_url(). $text;
+        $url = $this->generate_tweet_url(). urlencode($text);
         return $url;
     }
     
     public function tweet() {
-        echo $this->words_url();
+        
+        return redirect($this->words_url());
     }
+
 
 }
