@@ -38,18 +38,25 @@ class QrController extends Controller {
         return $sentence;
     }
     
-    public function generate_tweet_url() {
-        return config('constants.twitter.endpoint').'?'.config('constants.twitter.text').'=';
+    public function generate_tweet_text() {
+        return config('constants.twitter.endpoint').'?'.
+               config('constants.twitter.text').'='
+                ;
     }
     
     public function words_url() {
         $text = $this->generate_sentence();
-        $url = $this->generate_tweet_url(). $text;
-        return $url;
+        $final_url = $this->generate_tweet_text(). urlencode($text);
+        //$final_url .= '&'.config('constants.twitter.hashtag').'='. urlencode(config('constants.hashtags'));
+        
+        $final_url .= '&'.config('constants.twitter.related').'='. urlencode(config('constants.related_accounts'));
+        return $final_url;
     }
     
     public function tweet() {
-        echo $this->words_url();
+        
+        return redirect($this->words_url());
     }
+
 
 }

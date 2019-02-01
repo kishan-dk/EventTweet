@@ -65,9 +65,16 @@
     <body>
         <div class="flex-center position-ref full-height" id="flex">
             <div class="content">
+                <div class="title m-b-md">
+                    {{Config::get('constants.words.event.0')}}
+                </div>
                 <div class="img-fluid">
                     <img src="https://chart.googleapis.com/chart?cht=qr&chs={{Config::get('constants.qr_size')}}&chld=L&chl={{env('APP_URL')}}{{Config::get('constants.tweet_qr_redirect')}}">
                 </div>
+                <footer>
+                    
+                    <h2>If QR code not working visit: <br><a target="_blank" href="{{env('APP_URL')}}{{Config::get('constants.tweet_qr_redirect')}}">{{env('APP_URL')}}{{Config::get('constants.tweet_qr_redirect')}}</a></h2>
+                </footer>
             </div>
         </div>
     </body>
