@@ -59,7 +59,8 @@ class QrController extends Controller {
           print_r($tweets); */
 
         try {
-            $response = Twitter::getSearch(['count' => 10, 'q' => '#Laravel', 'result_type' => 'recent']);
+            //$response = Twitter::getSearch(['count' => 10, 'q' => '#Laravel', 'result_type' => 'recent']);
+            $response = Twitter::getFollowers();
             //$response1 = Twitter::getFavorites(['count' => 10, 'format' => 'array']);
         } catch (Exception $e) {
             // dd(Twitter::error());
@@ -70,7 +71,9 @@ class QrController extends Controller {
         //$array1 =  (array) $response->statuses;
         //echo '<pre>';print_R($array1);
         //echo $array['statuses'][0]['text']; 
-        dd($response);
+        $response = $response->users;
+        //dd($response);
+        return view('tweet',compact('response'));
     }
 
 }
